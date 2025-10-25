@@ -1,6 +1,8 @@
 # Playlist App with GitHub Gist Storage
 
 A simple Node.js playlist app using LowDB with GitHub Gist for data persistence. Perfect for deploying on Render.
+A gist is a simple way to share text or a code snippet. In this case we will use to store a simple low db json database.
+Gist can be public or secret. Even if they are secret they can be accessed with a URL with no authorization. So this should not be used for sensitive data. 
 
 ## Setup
 
@@ -13,7 +15,10 @@ A simple Node.js playlist app using LowDB with GitHub Gist for data persistence.
 5. Save and copy the Gist ID from the URL (the long string after your username)
 
 #### Walkthrough
+Click the + symbol, select gist
 ![new and select gits](guide_images/select-gist.png)
+
+Make sure to input the 
 ![gist](guide_images/new-gist.png)
 
 ### 2. Create a GitHub Token
@@ -25,11 +30,18 @@ A simple Node.js playlist app using LowDB with GitHub Gist for data persistence.
 5. Generate and copy the token
 
 #### Walkthrough
+Create a new token
 ![new token](guide_images/new-token.png)
+
+Name the token whatever, just for you to remember what this is for.
 ![token](guide_images/token.png)
+
+Scroll down and select gist. Make sure everything else is unchecked
 ![gist checkbox](guide_images/gist-checkbox.png)
 
 ### 3. Set up Environment Variables
+Environment variables are key value pairs that provide configuration information for an application. They are a way of hold secret info on a server and not exposing to the frontend or when pushing to git hub.
+Many API or services use environment variables for authorization. That is what w are doing here. We are secretly storing the github token and gist id so it won't be exposed. Now only our server will be able to read and write to this gist.
 
 Create a `.env` file in the project root (copy from .env.example):
 
@@ -59,7 +71,6 @@ Visit http://localhost:3000
    - `GIST_ID`
    - `GIST_TOKEN`
    - `GIST_FILENAME`
-   - `PORT` (Render sets this automatically, but you can set a default)
 5. Deploy!
 
 ## API Routes
