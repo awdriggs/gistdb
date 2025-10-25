@@ -12,6 +12,10 @@ A simple Node.js playlist app using LowDB with GitHub Gist for data persistence.
 4. Add initial content: `{"songs":[]}`
 5. Save and copy the Gist ID from the URL (the long string after your username)
 
+#### Walkthrough
+![new and select gits](guide_images/select-gist.png)
+![gist](guide_images/new-gist.png)
+
 ### 2. Create a GitHub Token
 
 1. Go to https://github.com/settings/tokens
@@ -19,6 +23,11 @@ A simple Node.js playlist app using LowDB with GitHub Gist for data persistence.
 3. Give it a name like "Playlist App"
 4. Check the `gist` scope
 5. Generate and copy the token
+
+#### Walkthrough
+![new token](guide_images/new-token.png)
+![token](guide_images/token.png)
+![gist checkbox](guide_images/git-checkbox.png)
 
 ### 3. Set up Environment Variables
 
