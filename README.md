@@ -27,7 +27,7 @@ A simple Node.js playlist app using LowDB with GitHub Gist for data persistence.
 #### Walkthrough
 ![new token](guide_images/new-token.png)
 ![token](guide_images/token.png)
-![gist checkbox](guide_images/git-checkbox.png)
+![gist checkbox](guide_images/gist-checkbox.png)
 
 ### 3. Set up Environment Variables
 
