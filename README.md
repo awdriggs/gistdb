@@ -71,6 +71,7 @@ Visit http://localhost:3000
    - `GIST_ID`
    - `GIST_TOKEN`
    - `GIST_FILENAME`
+![click to upload env](guide_images/render_env.png)
 5. Deploy!
 
 ## API Routes
